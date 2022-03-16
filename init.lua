@@ -1,0 +1,6 @@
+require("keybindings")
+require("plugins")
+require("theme")
+require("basic")
+require("lsp/setup")
+require('lsp/nvim-cmp')
