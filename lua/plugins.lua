@@ -22,17 +22,12 @@ return require('packer').startup(function()
     config = 'vim.cmd[[ALEEnable]]'
   }
 
-  -- NerdTree - a file tree
-  use 'preservim/nerdtree'
-
   -- nvim-tree
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
+    requires = { 'kyazdani42/nvim-web-devicons', opt = false },
     config = function() require'nvim-tree'.setup {} end
-}
+  }
 
   -- Startify
   use 'mhinz/vim-startify'
@@ -49,7 +44,7 @@ return require('packer').startup(function()
   -- Lualine
   use {
   'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  requires = { 'kyazdani42/nvim-web-devicons', opt = false }
   }
 
   -- lspconfig
@@ -70,4 +65,5 @@ return require('packer').startup(function()
 
   -- indent blank lualine
   use 'lukas-reineke/indent-blankline.nvim'
+
 end)
