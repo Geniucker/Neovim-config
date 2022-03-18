@@ -22,12 +22,10 @@ mymap("n","<A-L>",":vertical resize +1<CR>",myopts)
 mymap("n","<A-J>",":resize -1<CR>",myopts)
 mymap("n","<A-K>",":resize +1<CR>",myopts)
 
+-- markdown preview
+mymap("n","<leader>M",":MarkdownPreviewToggle<CR>",myopts)
 
 pluginKeys = {}
-
--- NERDTree
-mymap("","<F3>",":NERDTreeToggle<CR>",myopts)
-
 -- nvim-cmp auto completion
 pluginKeys.cmp = function(cmp)
   return {

@@ -3,12 +3,8 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins can be specified as strings
-  use '9mm/vim-closer'
-
-  -- Lazy loading:
-  -- Load on specific commands
-  use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
+  -- auto-pairs
+  use 'jiangmiao/auto-pairs'
 
   -- Load on an autocommand event
   use {'andymass/vim-matchup', event = 'VimEnter'}
@@ -25,7 +21,7 @@ return require('packer').startup(function()
   -- nvim-tree
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = false },
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
     config = function() require'nvim-tree'.setup {} end
   }
 
@@ -44,7 +40,7 @@ return require('packer').startup(function()
   -- Lualine
   use {
   'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = false }
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true },
   }
 
   -- lspconfig
@@ -52,7 +48,7 @@ return require('packer').startup(function()
 
     -- nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
-  use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
+  use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' }
   use 'hrsh7th/cmp-path'     -- { name = 'path' }
   use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
   use 'hrsh7th/nvim-cmp'
@@ -66,4 +62,6 @@ return require('packer').startup(function()
   -- indent blank lualine
   use 'lukas-reineke/indent-blankline.nvim'
 
+  -- markdown preview
+  use {'iamcco/markdown-preview.nvim', run = function() vim.fn['mkdp#util#install']() end, ft = 'markdown' }
 end)
