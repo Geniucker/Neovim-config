@@ -67,4 +67,7 @@ return require('packer').startup(function()
   use 'rafamadriz/friendly-snippets'
   -- lspkind
   use 'onsails/lspkind-nvim'
+
+  -- indent blank lualine
+  use 'lukas-reineke/indent-blankline.nvim'
 end)
