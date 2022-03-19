@@ -8,6 +8,11 @@ vim.g.maplocalleader = "\\"
 mymap("n","H","^",myopts)
 mymap("n","L","$",myopts)
 
+mymap("n","j","gj",myopts)
+mymap("n","gj","j",myopts)
+mymap("n","k","gk",myopts)
+mymap("n","gk","k",myopts)
+
 -- remap 'q'
 mymap("n","q",":bd<CR>",myopts)
 mymap("n","<leader>q","q",myopts)

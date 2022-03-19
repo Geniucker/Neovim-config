@@ -1,11 +1,11 @@
 # This Geniucker's Neovim Config
 The resp is created to backup and share my nvim config.
-# Requirements
+## Requirements
 - Neovim (the latest one is recommended)
 - Install the Packer.nvim(a package manager)  
-  for Windows (***please use powershell***, cmd is not supported): 
+  for Windows 
   ```
-  git clone --depth 1 https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+  powershell git clone --depth 1 https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
   ```
   for Unix, Linux
   ```
@@ -13,5 +13,8 @@ The resp is created to backup and share my nvim config.
   ```
  - A patched font  
   It's required by `kyazdani42/nvim-web-devicons`, which is  used to display some icons.  
-  It can be downloaded from [NERD FONTS](https://www.nerdfonts.com/) and should be installed into your system. Relevant info can be searched online.  
+  It can be downloaded from [NERD FONTS](https://www.nerdfonts.com/) and should be installed into your system. My choice is `Caskaydia`. Relevant info can be searched online.  
+  **On Windows you'd better use `nvim` in Windows Terminal or use `nvim-qt.exe` for the fonts can't be correctly loaded in separate `cmd` or `powershell`.**  
+  **If you use Windows Terminal on Windows, you need to set the font of Windows Terminal separately.** Here is a [reference](https://www.get-itsolutions.com/windows-terminal-change-font/) in English.
+## Geting Started
 
