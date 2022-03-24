@@ -30,6 +30,9 @@ mymap("n","<A-K>",":resize +1<CR>",myopts)
 -- markdown preview
 mymap("n","<leader>M",":MarkdownPreviewToggle<CR>",myopts)
 
+-- Terminal
+mymap("t","<ESC><ESC>","<C-\\><C-n>",myopts)
+
 pluginKeys = {}
 -- nvim-cmp auto completion
 pluginKeys.cmp = function(cmp)
