@@ -5,8 +5,8 @@ myopts = { noremap = true, silent = true }
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = "\\"
 
-mymap("n","H","^",myopts)
-mymap("n","L","$",myopts)
+mymap("","H","^",myopts)
+mymap("","L","$",myopts)
 
 mymap("n","j","gj",myopts)
 mymap("n","gj","j",myopts)
