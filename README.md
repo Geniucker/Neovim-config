@@ -22,7 +22,7 @@ This resp is created to backup and share my nvim config.
 - Clone this repo  
   for Windows(please use **powershell**)  
   ```
-  git clone --depth 1 https://gitlab.com/Geniucker/neovim-config.git ~/AppData/Local/nvim
+  git clone --depth 1 https://gitlab.com/Geniucker/neovim-config.git "$env:LOCALAPPDATA/nvim"
   ```
   for Unix, Linux  
   ```
