@@ -17,6 +17,11 @@ mymap("n","gk","k",myopts)
 mymap("n","q",":bd<CR>",myopts)
 mymap("n","<leader>q","q",myopts)
 
+-- copy and past from the clipboard
+mymap("","<leader>P","\"*P",myopts)
+mymap("","<leader>p","\"*p",myopts)
+mymap("","<leader>y","\"*y",myopts)
+
 -- Windows Controle
 mymap("n","<A-h>","<C-w>h",myopts)
 mymap("n","<A-j>","<C-w>j",myopts)
