@@ -6,6 +6,7 @@ local lsp_installer = require "nvim-lsp-installer"
 local servers = {
   sumneko_lua = require "lsp.lua", -- /lua/lsp/lua.lua
   pylsp = require "lsp.python",
+  clangd = require "lsp.cpp"
 }
 
 -- 自动安装 LanguageServers
